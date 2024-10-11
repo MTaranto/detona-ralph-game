@@ -1,2 +1,155 @@
 @import url(./reset.css);
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(../images/wall.png);
+}
+#select-level {
+  position: absolute;
+  height: 15rem;
+  width: 25rem;
+  top: calc(50% - 7.5rem);
+  left: calc(50% - 12.5rem);
+  background-color: #000;
+  border: 10px double #ffd700;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#select-level p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: .5rem;
+  line-height: 2rem;
+}
+#select-level select {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: fit-content;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+#startButton:disabled {
+  margin-top: 1.8rem;
+  max-width: 10rem;
+  margin: 1rem auto;
+  background-color: #000;
+  padding: .5rem;
+  color: #808080;
+  border-color: #808080;
+}
+#startButton:enabled {
+  margin-top: 1.8rem;
+  max-width: 10rem;
+  margin: 1rem auto;
+  background-color: #000;
+  padding: .5rem;
+  color: #fff;
+  border-color: #ffd700;
+}
+.menu {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: 5px solid #ffd700;
+}
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2),
+.menu-level h2:nth-child(2) {
+  margin-top: 1rem;
+}
+.menu-lives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.menu-level h2 {
+  text-transform: capitalize;
+}
+.panel {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.panel-row {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.square {
+  background-image: url(../images/window.jpg);
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+}
+.enemy {
+  background: url(../images/window-ralph.jpg)
+  center bottom 2.5px/ contain
+  no-repeat;
+}
+#restart {
+  position: absolute;
+  height: 15rem;
+  width: 25rem;
+  top: calc(50% - 7.5rem);
+  left: calc(50% - 12.5rem);
+  background-color: #000;
+  border: 10px double #ffd700;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+  display: none;
+}
+#restart button {
+  padding: .5rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+#thanks {
+  position: absolute;
+  height: 5rem;
+  width: 32rem;
+  top: calc(50% - 2.5rem);
+  left: calc(50% - 16rem);
+  background-color: #000;
+  border: 10px double #ffd700;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  display: none;
+}
+#final-score {
+  position: absolute;
+  height: 10rem;
+  width: 32rem;
+  top: calc(50% - 2.5rem);
+  left: calc(50% - 16rem);
+  background-color: #000;
+  border: 10px double #ffd700;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  display: none;
+}
+#final-score button {
+  padding: .5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

@@ -5,8 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detona Ralph</title>
   <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="icon" href="src/images/favicon.jpg" type="image/jpeg">
 </head>
 <body>
+  <div class="container">
+    <div id="select-level">
+      <p>Choose the difficulty level</p>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="normal">Normal</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="startButton" disabled>Start</button>
+    </div>
+    <div class="menu">
+      <div class="menu-time">
+        <h2 style="color: #ff0000;">Time Left</h2>
+        <h2 id="time-left">0</h2>
+      </div>
+      <div class="menu-score">
+        <h2 style="color: #ff0000;">Your Score</h2>
+        <h2 id="score">0</h2>
+      </div>
+      <div class="menu-lives">
+        <img src="./src/images/player.png" width="60px"/>
+        <h2 id="lives"></h2>
+      </div>
+      <div class="menu-level">
+        <h2 style="color: #ff0000;">Difficulty</h2>
+        <h2 id="level"></h2>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-row">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+      </div>
+      <div class="panel-row">
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+      </div>
+      <div class="panel-row">
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+      </div>
+    </div>
+    <div id="restart">
+      <p>Game Over</p>
+      <button id="restartButton">Restart</button>
+      <button id="finishButton">Finish</button>
+    </div>
+    <div id="thanks">
+      <p>Thanks for playing!</p>
+    </div>
+    <div id="final-score">
+      <p id="points">Game Over! Your final score was 10 points!</p>
+      <button id="playAgainButton">Play Again?</button>
+      <button id="endButton">Finish</button>
+    </div>
+  </div>
 
   <script defer src="./src/scripts/engine.js"></script>
 </body>
